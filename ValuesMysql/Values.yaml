@@ -1,0 +1,6 @@
+bbdd: kubernetes
+pass: ipass
+usudb: usudb
+root: rpass
+namespace: default
+
