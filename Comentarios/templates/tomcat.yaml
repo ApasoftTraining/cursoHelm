@@ -1,0 +1,26 @@
+# Esto es un comentario de YAML.. Kubernetes
+#
+
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{.Release.Name}}-tomcat
+  labels:
+    estado: "aprobado"
+    responsable: "juan"
+spec:
+  containers:
+   - name: tomcat1     
+     {{- /*
+
+     HELM comment . Esta condicio hace...
+
+     */}}
+     {{ $version := "" }} 
+     {{ if eq .Values.entorno "desarrollo" }}
+     image: tomcat:9.0
+     {{ else }}
+     image: tomcat:10.0
+     {{ end }}

@@ -1,0 +1,33 @@
+{{/*  ESTO ES COMENTARIO
+ESTRUCTURA IF
+=============
+{{ if CONDICION }}
+  # PROCESO
+{{ else if CONDICION }}
+  # HACER OTRA COSA
+{{ else }}
+  # OPCIÓN POR DEFECTO
+{{ end }}
+
+
+OPERADORES  (FUNCIONES CONTROL FLOW FUNCTIONS)
+==========
+eq   ne  lt   gt  ge  le  and   or  not 
+default empty    failed .......
+
+
+EJEMPLOS
+========
+if operador .Arg1  .Arg2
+
+{{ if eq .Values.favorite.drink "coffee" }}  mug: true    {{ end }}
+
+{{ if eq .Values.favorite.drink "coffee" }}
+   mug: true
+{{ end }}
+
+  {{ if le .Values.version 1 }}
+  entorno: prod
+  {{ end }}
+
+*/}}

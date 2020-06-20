@@ -1,0 +1,25 @@
+ESTRUCTURA IF
+=============
+{{ if CONDICION }}
+  # PROCESO
+{{ else if CONDICION }}
+  # HACER OTRA COSA
+{{ else }}
+  # OPCIÓN POR DEFECTO
+{{ end }}
+
+
+OPERADORES
+==========
+eq 
+
+
+EJEMPLOS
+========
+{{ if eq .Values.favorite.drink "coffee" }}mug: true{{ end }}
+
+{{ if eq .Values.favorite.drink "coffee" }}
+  mug: true
+  {{ end }}
+
+
