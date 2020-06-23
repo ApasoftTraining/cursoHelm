@@ -1,0 +1,11 @@
+# Default values for Bucles.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+departamentos:
+  rrhh: California
+  sales: Chicago
+  TI: New York
+  Marketing: Los Angeles
+       
+## .Values.departamentos.sales
